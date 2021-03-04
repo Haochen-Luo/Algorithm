@@ -1,11 +1,10 @@
 public class Mergesort {
-
-    void merge_sort(int arr[], int low, int high) {
+    void sort(int arr[], int low, int high) {
         if (low >= high) return;
 
         int mid = (low + high) / 2;
-        merge_sort(arr, low, mid);
-        merge_sort(arr, mid + 1, high);
+        sort(arr, low, mid);
+        sort(arr, mid + 1, high);
         merge(arr, low, mid, high);
     }
 
@@ -21,6 +20,6 @@ public class Mergesort {
 
         for (i = low, j = 0; i <= high; i++, j++) arr[i] = tmp[j];
 
-    }
+    } 
     
 }
