@@ -1,4 +1,6 @@
-# nn.CrossEntropyLoss的官方定义
+#  nn.CrossEntropyLoss细谈
+
+## nn.CrossEntropyLoss的官方定义
 
 This criterion combines LogSoftmax and NLLLoss in one single class.
 
