@@ -37,7 +37,9 @@ print(-torch.log(torch.Tensor([0.3780])))
 **可以发现和交叉熵完全一样**
 
 所以交叉熵损失因为one hot encoding的缘故可以从
+
 ![image](https://user-images.githubusercontent.com/46443218/114267324-b69fe680-99f2-11eb-8375-0785c6f07e1f.png)
+
 化简为真实标签label对应的liklihood（这里比如这里的真实标签为0，对应的likelihood0.2）的softmax，取log，加负号！！
 就是这么简单
  
