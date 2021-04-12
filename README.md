@@ -7,4 +7,5 @@
 ## please refer some engineer and coding experience to 代码细节.md, such as bound...
 
 ## TODO
+编辑距离会写代码但是思想值得再研究一下
 ![image](https://user-images.githubusercontent.com/46443218/114380120-994d5280-9b81-11eb-837b-a474d8ed999d.png)
