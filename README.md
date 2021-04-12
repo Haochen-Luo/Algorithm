@@ -5,3 +5,6 @@
 3. Dynamic programming
 
 ## please refer some engineer and coding experience to 代码细节.md, such as bound...
+
+## TODO
+![image](https://user-images.githubusercontent.com/46443218/114380120-994d5280-9b81-11eb-837b-a474d8ed999d.png)
