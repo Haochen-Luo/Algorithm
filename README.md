@@ -8,5 +8,6 @@
 
 ## TODO
 1. 编辑距离会写代码但是思想值得再研究一下[已完成！]
-2. 格雷编码的公式证明，优先级很低
+2. 括号生成再研究研究https://leetcode-cn.com/problems/generate-parentheses/submissions/
+3. 格雷编码的公式证明，优先级很低
 ![image](https://user-images.githubusercontent.com/46443218/114380120-994d5280-9b81-11eb-837b-a474d8ed999d.png)
