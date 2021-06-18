@@ -1,3 +1,21 @@
+## 易错点:一维向量的加法广播
+
+```python
+matrix1 = np.array([[1,1],[2,2],[3,3]]) # (3,2)
+matrix2 = np.array([[0],[0],[0]]) # (3,1) 
+vector1D = np.array([1,1]) # (2,) 
+vector2D = np.array([[1],[1]]) # (2,1)
+print("matrix1 \n", matrix1,"\n")
+print("matrix2 \n", matrix2,"\n")
+print("vector1D \n", vector1D,"\n")
+print("vector2D \n", vector2D)
+print("Adding a (3,) vector to a (3 x 1) vector\n",
+      "broadcasts the 1D array across the second dimension\n",
+      "Not what we want here!\n",
+      np.dot(matrix1,vector1D) + matrix2
+     )
+```
+
 ## 沿着某一个轴(一个直觉：沿着哪一个轴，哪一个轴就没了)
 ### 选取元素
 ```python
