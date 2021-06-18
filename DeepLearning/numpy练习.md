@@ -1,3 +1,5 @@
+## 沿着某一个轴
+```python
 x = np.array([
     [[1,8,12],
      [2,9,12]],
@@ -22,8 +24,8 @@ print((x.sum(axis = 1)).shape)
 print()
 print(x.sum(axis = 2))
 print((x.sum(axis = 2)).shape) 
-
-"""
+```
+```
 output
 >>>
 [[1 2]
@@ -56,8 +58,10 @@ output
  [23 25]
  [23 25]]
 (4, 2)
-"""
-
+```
+----------
+## 拼接
+```python
 import numpy as np
 a = np.array([[1,2,3],[1,2,3]])
 b = np.array([[1,2,3],[1,2,3]])
@@ -73,3 +77,14 @@ print(c)
 [[1 2 3 1 2 3]
  [1 2 3 1 2 3]]
 """
+```
+## np.random.choice
+
+Use np.random.choice.
+
+Example of how to use np.random.choice():
+
+np.random.seed(0)
+probs = np.array([0.1, 0.0, 0.7, 0.2])
+idx = np.random.choice(range(len(probs), p = probs)
+
