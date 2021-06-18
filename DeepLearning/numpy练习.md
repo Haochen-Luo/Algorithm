@@ -72,7 +72,6 @@ c = np.concatenate((a,b),axis = 0)
 print(c)
 c = np.concatenate((a,b),axis = 1)
 print(c)
-"""
 ```
 ```
 [[1 2 3]
@@ -81,7 +80,6 @@ print(c)
  [1 2 3]]
 [[1 2 3 1 2 3]
  [1 2 3 1 2 3]]
-"""
 ```
 ## np.random.choice
 
