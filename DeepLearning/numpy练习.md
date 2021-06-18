@@ -99,6 +99,24 @@ print(c)
 [[1 2 3 1 2 3]
  [1 2 3 1 2 3]]
 ```
+### agrmax
+```
+t = np.array([[1,2,3]])
+print(t.shape)
+x = np.argmax(t)
+print(x)
+
+t = np.array([1,2,3])
+print(t.shape)
+x = np.argmax(t)
+print(x)
+```
+```
+(1, 3)
+2
+(3,)
+2
+```
 ## np.random.choice
 
 Use np.random.choice.
