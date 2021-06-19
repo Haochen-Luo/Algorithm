@@ -11,7 +11,11 @@ This is an overview of the multimodal projects from June 2021 to December 2021.
 > Each lecture consists of 3 segments and **write one full long sentence for each segment**.
 
 ### Week 1
-- [ ] lecture 1
+| Task           | Time required | Current Status | Finished | 
+|----------------|---------------|----------------|-----------|
+|  lecture  | 2 hours  |   in progress |  <ul><li>- [ ] 4.2</li><li>- [ ] 5.1</li></ul>
+|  paper   | 2 hours  |  in progress | 
+
 
 ### lectures Notes
 <details open>
