@@ -1,19 +1,5 @@
 This is an overview of the multimodal projects from June 2021 to December 2021.
 
-
-## Resource
-
-### Course Link
-CMU Multimodal Courses
-```
-[1] Main: https://cmu-multicomp-lab.github.io/mmml-course/fall2020/syllabus/#course-material
-[2] Complementary: https://yonatanbisk.com/teaching/mmml-s21/
-```
-### Dataset
-https://yonatanbisk.com/teaching/mmml-s21/#:~:text=from%20max%20grade.-,Datasets,-The%20course%20will
-
-### Dataset
-
 ## Overall Plan
 
 - Read at least ten papers
@@ -26,4 +12,28 @@ https://yonatanbisk.com/teaching/mmml-s21/#:~:text=from%20max%20grade.-,Datasets
 
 ### Weekly 1
 - [ ] lecture 1
+
+### lectures Notes
+<details open>
+  <summary>lectures</summary>
+  <details>
+    <summary>lecture 2</summary>
+    <ol>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+  </details>
+</details>
+
+## Resource
+
+### Course Link
+CMU Multimodal Courses
+```
+[1] Main: https://cmu-multicomp-lab.github.io/mmml-course/fall2020/syllabus/#course-material
+[2] Complementary: https://yonatanbisk.com/teaching/mmml-s21/
+```
+### Dataset
+https://yonatanbisk.com/teaching/mmml-s21/#:~:text=from%20max%20grade.-,Datasets,-The%20course%20will
 
