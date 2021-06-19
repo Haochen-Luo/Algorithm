@@ -10,7 +10,7 @@ This is an overview of the multimodal projects from June 2021 to December 2021.
 - Watch All the CMU's Multimodal Machine Learning course (11-777)
 > Each lecture consists of 3 segments and **write one full long sentence for each segment**.
 
-### Weekly 1
+### Week 1
 - [ ] lecture 1
 
 ### lectures Notes
