@@ -4,7 +4,7 @@
 2. Divide and conquer
 3. Dynamic programming
 
-## please refer some engineer and coding experience to 代码细节.md, such as bound...
+## please refer some engineer and coding experience to 代码细节.md, such as boundaries...
 
 ## TODO
 1. 编辑距离会写代码但是思想值得再研究一下[已完成！]
