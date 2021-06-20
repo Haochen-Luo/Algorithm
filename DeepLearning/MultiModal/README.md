@@ -32,6 +32,9 @@ This is an overview of the multimodal projects from June 2021 to December 2021.
 
 ## Resource
 
+### Awesome Reading
+https://github.com/pliang279/awesome-multimodal-ml
+
 ### Course Link
 CMU Multimodal Courses
 ```
