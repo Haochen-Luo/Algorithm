@@ -4,7 +4,8 @@ This is an overview of the multimodal projects from June 2021 to December 2021.
 
 - Read at least ten papers
 > Write summaries
->> - [ ] Paper1: TODO
+>> - [ ] Paper1: Oscar: Object-Semantics Aligned Pre-training
+for Vision-Language Tasks https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123750120.pdf
 
 
 - Watch All the CMU's Multimodal Machine Learning course (11-777)
