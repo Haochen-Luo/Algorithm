@@ -19,4 +19,4 @@ gdown.download(url, output, quiet=False)
 #### tar -xvf
 - unzip .tar or .tar.gz file
 - x means extract and v means verbose f means tar file
-- alternative: **!gzip** -d FILENAME.tar.gz
+<!-- - alternative: **!gzip** -d FILENAME.tar.gz -->
