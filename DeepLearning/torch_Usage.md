@@ -97,3 +97,25 @@ import torch
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 model.to(device)
 data = data.to(device)
+
+### torch.cat
+```python
+import torch
+a = torch.ones((2,3))
+print(a)
+b = torch.ones((2,3))
+print(torch.cat((a,b),0))
+print(torch.cat((a,b),1))
+```
+```
+tensor([[1., 1., 1.],
+        [1., 1., 1.]])
+        
+tensor([[1., 1., 1.],
+        [1., 1., 1.],
+        [1., 1., 1.],
+        [1., 1., 1.]])
+        
+tensor([[1., 1., 1., 1., 1., 1.],
+        [1., 1., 1., 1., 1., 1.]])
+```
