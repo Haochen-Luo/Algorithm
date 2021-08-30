@@ -1,3 +1,7 @@
+Awesome Project
+### Image Captioning
+带注意力机制的看图说话: https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning
+
 常用命令总结(Common Commands)
 
 ### Download Tricks
