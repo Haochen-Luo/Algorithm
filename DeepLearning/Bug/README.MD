@@ -1,3 +1,4 @@
+#### Or check if you forgot to let the model predict the results again!!!!
 I had a similar problem.
 Here is my code that made the mistake.
 
@@ -61,4 +62,16 @@ I think it is probably due to this issue
 The loss variable for the first backward and the loss variable for the second backward must be different.
 I forgot to initialize the variables.
 
-#### Or check if you forgot to let the model predict the results again!!!!
+
+
+### cannot optimize non-leaf
+```py
+import numpy as np
+np.savez('arr',arr = np.array([1.]))
+import torch
+print('below is wrong')
+mat = torch.tensor(np.load('arr.npz')['arr'],requires_grad=True).to('cuda')
+print('below is correct')
+mat = torch.tensor(np.load('arr.npz')['arr'],requires_grad=True,device='cuda')
+op = torch.optim.Adam([mat],lr = 0.1)
+```
