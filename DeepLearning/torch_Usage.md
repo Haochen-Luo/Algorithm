@@ -143,4 +143,21 @@ def accuracy(scores, targets, k):
     correct = ind.eq(targets.view(-1, 1).expand_as(ind))
     correct_total = correct.view(-1).float().sum()  # 0D tensor
     return correct_total.item() * (100.0 / batch_size)
+import torch
+a = torch.tensor(
+    [[1,44,23,12],
+     [2,3,4,5],
+    [2,3,1,1],
+     [1,2,1,1]])
+target = torch.tensor([1,2,4,3])
+values,indices = a.topk(2,dim = 1,largest = True)
+print(a.view(-1))
+t = target.view(-1,1)
+print(t)
+print('------')
+print(t.expand_as(indices))
+print(t.tile(2))
+print('------')
+print(indices)
+print(indices.eq(t.expand_as(indices)))
 ```
