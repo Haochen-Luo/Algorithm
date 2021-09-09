@@ -1,4 +1,9 @@
 #  nn.CrossEntropyLoss细谈
+## UPDATE 2021/9/9
+讲得特别透彻：https://fleuret.org/dlc/materials/dlc-handout-5-1-cross-entropy-loss.pdf
+![image](https://user-images.githubusercontent.com/46443218/132660453-5b942b79-4df1-4d95-974d-50c081b93b4a.png)
+
+
 
 ## nn.CrossEntropyLoss的官方定义
 
