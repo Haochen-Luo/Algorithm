@@ -1,3 +1,6 @@
+## Awesome Course/Material
+https://fleuret.org/
+
 ## Awesome Project
 ### Image Captioning
 - 带注意力机制的看图说话: https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning
