@@ -119,3 +119,10 @@ tensor([[1., 1., 1.],
 tensor([[1., 1., 1., 1., 1., 1.],
         [1., 1., 1., 1., 1., 1.]])
 ```
+
+### torch.topk
+
+import torch
+a = torch.tensor([1,44,23,12])
+x = a.topk(3)
+print(x)
