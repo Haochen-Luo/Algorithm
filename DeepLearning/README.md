@@ -4,6 +4,8 @@ https://fleuret.org/
 ## Awesome Project
 ### Image Captioning
 - 带注意力机制的看图说话: https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning
+### Bert
+词库外的词汇: https://medium.com/@pierre_guillou/nlp-how-to-add-a-domain-specific-vocabulary-new-tokens-to-a-subword-tokenizer-already-trained-33ab15613a41
 
 ## 常用命令总结(Common Commands)
 
