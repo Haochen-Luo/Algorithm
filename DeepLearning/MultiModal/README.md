@@ -1,9 +1,5 @@
 This is an overview of the multimodal projects from June 2021 to December 2021.
 
-## Overall Plan
-
-- Read at least ten papers
-> Write summaries
 
 ## Resource
 
