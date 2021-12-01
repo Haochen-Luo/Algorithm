@@ -29,3 +29,7 @@ gdown.download(url, output, quiet=False)
 - unzip .tar or .tar.gz file
 - x means extract and v means verbose f means tar file
 <!-- - alternative: **!gzip** -d FILENAME.tar.gz -->
+
+#### Find File
+##### 
+https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux
