@@ -12,3 +12,4 @@ void backtracking(参数) {
     }
 }
 ```
+![image](https://user-images.githubusercontent.com/46443218/155851356-764e4a71-3459-4079-8016-6ff205934fe3.png)
