@@ -1,3 +1,4 @@
+```
 void backtracking(参数) {
     if (终止条件) {
         存放结果;
@@ -10,3 +11,4 @@ void backtracking(参数) {
         回溯，撤销处理结果
     }
 }
+```
