@@ -18,6 +18,7 @@
 ![image](https://user-images.githubusercontent.com/46443218/114380120-994d5280-9b81-11eb-837b-a474d8ed999d.png)
 
 ### python的列表生成细节
+慎用乘法，第二个列表我们本意是给第一个添加12，但是全都加了
 ```py
 print([0]*12)
 a = [0]*12
