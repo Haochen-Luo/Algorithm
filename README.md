@@ -16,3 +16,22 @@
 	3. 数据库: https://github.com/rbmonster/learning-note/blob/master/src/main/java/com/toc/MYSQL.md#8
 
 ![image](https://user-images.githubusercontent.com/46443218/114380120-994d5280-9b81-11eb-837b-a474d8ed999d.png)
+
+### python的列表生成细节
+```py
+print([0]*12)
+a = [0]*12
+for i in range(len(a)):
+    a[i] = i
+print(a)
+b = [[]]*12
+b[0].append(12)
+print(b)
+```
+
+output
+```
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+[[12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12]]
+
+```
