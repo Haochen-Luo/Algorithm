@@ -1,4 +1,6 @@
-## VISA考试最大
+## VISA考试最大树的深度
+## 思考：当时没有做出来就是不会构建树的结点
+## 当时想用邻接矩阵做，时间不够就紧张了。而且对于深搜 max()这样的做法不会，以为一定要储存一个最大值
 ### Minimum number of groups of nodes such that no ancestor is present in the same group
 Difficulty Level : Hard
 Last Updated : 07 Jun, 2021
