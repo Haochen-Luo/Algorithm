@@ -1,5 +1,5 @@
-
-## Minimum number of groups of nodes such that no ancestor is present in the same group
+## VISA考试最大
+### Minimum number of groups of nodes such that no ancestor is present in the same group
 Difficulty Level : Hard
 Last Updated : 07 Jun, 2021
 Given a tree of N nodes. The task is to form the minimum number of groups of nodes such that every node belong to exactly one group, and none of its ancestors are in the same group. The parent of each node is given (-1 if a node does not have a parent).
