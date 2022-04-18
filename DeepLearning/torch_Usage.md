@@ -163,7 +163,7 @@ print(indices.eq(t.expand_as(indices)))
 ```
 
 torch.squeeze(i) unsqueeze(i)在哪里unsqueeze就在那里插入一个1的维度，squeeze减去i(i刚好为1)这一维度
-```
+```py
 >>> a=torch.rand(2,1,3,1,4,1)
 >>> a
 tensor([[[[[[0.8910],
