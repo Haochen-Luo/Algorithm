@@ -219,3 +219,29 @@ torch.Size([2, 1, 1, 3, 1, 4, 1])
 >>> a.unsqueeze(0).shape
 torch.Size([1, 2, 1, 3, 1, 4, 1])
 ```
+torch matmul vs mm 
+matmul的泛用性更强。mm要求两个矩阵
+```py
+>>> a = torch.tensor([1,2,3,4])
+>>> b = torch.tensor([[1,1,2,2],[0,1,1,1],[1,2,1,1],[3,4,5,1]])
+>>> torch.mm(a,b)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+RuntimeError: self must be a matrix
+>>> torch.matmul(a,b)
+tensor([16, 25, 27, 11])
+>>> b
+tensor([[1, 1, 2, 2],
+        [0, 1, 1, 1],
+        [1, 2, 1, 1],
+        [3, 4, 5, 1]])
+>>> a
+tensor([1, 2, 3, 4])
+>>> torch.mm(a.unsqueeze(0),b)
+tensor([[16, 25, 27, 11]])
+>>> torch.mm(a.unsqueeze(1),b)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (4x1 and 4x4)
+>>>
+```
