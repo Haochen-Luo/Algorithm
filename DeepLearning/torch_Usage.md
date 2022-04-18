@@ -161,3 +161,61 @@ print('------')
 print(indices)
 print(indices.eq(t.expand_as(indices)))
 ```
+
+torch.squeeze(i) unsqueeze(i)在哪里unsqueeze就在那里插入一个1的维度，squeeze减去i(i刚好为1)这一维度
+```
+>>> a=torch.rand(2,1,3,1,4,1)
+>>> a
+tensor([[[[[[0.8910],
+            [0.9806],
+            [0.5027],
+            [0.1167]]],
+
+
+          [[[0.3550],
+            [0.5119],
+            [0.7651],
+            [0.4108]]],
+
+
+          [[[0.5503],
+            [0.7516],
+            [0.6234],
+            [0.6540]]]]],
+
+
+
+
+        [[[[[0.3190],
+            [0.8547],
+            [0.8613],
+            [0.7470]]],
+
+
+          [[[0.9893],
+            [0.9485],
+            [0.4787],
+            [0.7272]]],
+
+
+          [[[0.9856],
+            [0.4083],
+            [0.4830],
+            [0.0464]]]]]])
+>>> a.squeeze(0).shape
+torch.Size([2, 1, 3, 1, 4, 1])
+>>> a.squeeze(1).shape
+torch.Size([2, 3, 1, 4, 1])
+>>> a.squeeze(3).shape
+torch.Size([2, 1, 3, 4, 1])
+>>> a.squeeze(5).shape
+torch.Size([2, 1, 3, 1, 4])
+>>> a.shape
+torch.Size([2, 1, 3, 1, 4, 1])
+>>> a.unsqueeze(3).shape
+torch.Size([2, 1, 3, 1, 1, 4, 1])
+>>> a.unsqueeze(1).shape
+torch.Size([2, 1, 1, 3, 1, 4, 1])
+>>> a.unsqueeze(0).shape
+torch.Size([1, 2, 1, 3, 1, 4, 1])
+```
