@@ -33,3 +33,8 @@ gdown.download(url, output, quiet=False)
 #### Find File
 ##### 
 https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux
+
+#### Find top k largest file in directory
+```
+du -a /dir/ | sort -n -r | head -n 20
+```
