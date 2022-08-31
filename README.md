@@ -82,3 +82,24 @@ public void reverse(StringBuilder sb, int left, int right) {
 链接：https://leetcode.cn/problems/reverse-words-in-a-string/solution/fan-zhuan-zi-fu-chuan-li-de-dan-ci-by-leetcode-sol/
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+### 
+在 Java 中，参数传递是 值传递，对象类型变量在传参的过程中，复制的是变量的地址。这些地址被添加到 res 变量，但实际上指向的是同一块内存地址，因此我们会看到 66 个空的列表对象。解决的方法很简单，在 res.add(path); 这里做一次拷贝即可。
+
+修改的部分：
+
+```java
+if (depth == len) {
+    res.add(new ArrayList<>(path));
+    return;
+}
+```
+```py
+if depth == size:
+    res.append(path[:])
+    return
+```
+作者：liweiwei1419
+链接：https://leetcode.cn/problems/permutations/solution/hui-su-suan-fa-python-dai-ma-java-dai-ma-by-liweiw/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
