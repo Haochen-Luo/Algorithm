@@ -1,7 +1,7 @@
 ## Awesome Course/Material
 https://fleuret.org/
 
-# Best article explaining Q,K,V in attention
+## Best article explaining Q,K,V in attention
 https://zhuanlan.zhihu.com/p/410776234
 
 ## Awesome Project
