@@ -1,6 +1,9 @@
 ## Awesome Course/Material
 https://fleuret.org/
 
+# Best article explaining Q,K,V in attention
+https://zhuanlan.zhihu.com/p/410776234
+
 ## Awesome Project
 ### Image Captioning
 - 带注意力机制的看图说话: https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning
