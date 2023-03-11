@@ -41,3 +41,8 @@ https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-
 ```
 du -a /dir/ | sort -n -r | head -n 20
 ```
+
+#### logging output
+```
+sh main.sh | tee -a log.txt
+```
