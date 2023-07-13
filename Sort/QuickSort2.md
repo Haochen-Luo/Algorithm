@@ -1,4 +1,6 @@
 ## 和之前的区别是index是取l
+
+这里的index可以理解为和pivot相比，即将要填充的位置
 ```java
 class Solution {
      public int[] sortArray(int[] arr) {
