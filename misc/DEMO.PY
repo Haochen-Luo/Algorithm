@@ -40,7 +40,9 @@ def single_image_learnable_question_joint(
         indices = np.arange(subset_size)
         test_dataset = torch.utils.data.Subset(test_dataset, indices)
 
+
     in_context_samples = get_query_set(train_dataset, args.query_set_size, seed)
+
     # Create a unique directory based on current timestamp to avoid overwriting
     output_dir = f"oneImgMultiQues_{EVAL_FRAC}"
     output_dir = os.path.join(base_dir,output_dir)
@@ -48,6 +50,7 @@ def single_image_learnable_question_joint(
     os.makedirs(output_dir, exist_ok=True)
         
     ################ Attack PART ###########################
+
     VQA_ROOT = "/scratch/local/ssd/haochen/flamingo_ssd/vqav2_data"
     with open(f"{VQA_ROOT}/v2_mscoco_val2014_annotations.json",'r') as f:
         eval_file = json.load(f)
@@ -78,6 +81,7 @@ def single_image_learnable_question_joint(
         test_batch_demo_samples = sample_batch_demos_from_query_set(
             in_context_samples, effective_num_shots, len(item)
         )
+
         item_images = []
         item_text = []
         # batch_ans = []
@@ -93,6 +97,7 @@ def single_image_learnable_question_joint(
             context_images = []
             
         item_images.append(context_images + [item[0]["image"]])
+
         train_context_text = "".join([
                 eval_model.get_vqa_prompt(
                     question=x["question"], answer=x["answers"][0]
@@ -105,6 +110,7 @@ def single_image_learnable_question_joint(
                 )
                 for x in test_batch_demo_samples[0]
         ])
+
         if num_shots == 0:
             train_context_text = train_context_text.replace("<image>", "")
             test_context_text = test_context_text.replace("<image>", "")
@@ -115,6 +121,7 @@ def single_image_learnable_question_joint(
                     train_context_text + eval_model.get_vqa_prompt(question=ques)+" "+target)
             else:
                 raise ValueError("no target mode is not supported")
+
         """ start to attack the question"""
         
         labels_list = []
@@ -171,6 +178,7 @@ def single_image_learnable_question_joint(
                 attention_mask=attention_mask,
                 labels=labels,
             )[0]
+
             # total_loss.append(float(loss.item()))
             loss.backward()
             tpoch.set_postfix(loss=loss.item(),best_loss=best_loss.item())
@@ -201,6 +209,7 @@ def single_image_learnable_question_joint(
             # res = approximate_embeddings(model = eval_model.model.lang_encoder,input_tensor=inputs_embeds,tokenizer=tokenizer)
             # print("approximate result is:",res)
             
+
                 
         ################# evaluation part #######################
         
